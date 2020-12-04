@@ -10,14 +10,14 @@ on:
   #  branches: 
   #    - master
   schedule:
-    - cron: "* 8,20 * * *"
-  watch:
-    types: [started]
+    - cron: '55 0 * * *'
+  #watch:
+  #  types: [started]
    
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout
       uses: actions/checkout@master
